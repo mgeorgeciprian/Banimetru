@@ -1,0 +1,25 @@
+# ═══════════════════════════════════════════════════════════════
+# FinRo.ro — Crontab Configuration for Automated Agents
+# ═══════════════════════════════════════════════════════════════
+# Install: crontab < crontab.txt  (or crontab -e and paste)
+#
+# Three agents run daily, staggered to avoid overlap:
+#   06:00 EET — Finance Agent
+#   07:00 EET — Insurance Agent
+#   08:00 EET — Tech Agent
+#
+# Adjust paths to match your deployment.
+# ═══════════════════════════════════════════════════════════════
+
+# Python Agents
+0 6 * * * cd /opt/finro/agents/python && /usr/bin/python3 agent_finance.py --max-articles 5 >> /var/log/finro/finance.log 2>&1
+0 7 * * * cd /opt/finro/agents/python && /usr/bin/python3 agent_insurance.py --max-articles 5 >> /var/log/finro/insurance.log 2>&1
+0 8 * * * cd /opt/finro/agents/python && /usr/bin/python3 agent_tech.py --max-articles 5 >> /var/log/finro/tech.log 2>&1
+
+# --- OR Node.js Agents (uncomment below and comment above) ---
+# 0 6 * * * cd /opt/finro/agents/nodejs && /usr/bin/node agent_finance.js --max-articles 5 >> /var/log/finro/finance.log 2>&1
+# 0 7 * * * cd /opt/finro/agents/nodejs && /usr/bin/node agent_insurance.js --max-articles 5 >> /var/log/finro/insurance.log 2>&1
+# 0 8 * * * cd /opt/finro/agents/nodejs && /usr/bin/node agent_tech.js --max-articles 5 >> /var/log/finro/tech.log 2>&1
+
+# Weekly cleanup of articles older than 90 days
+0 3 * * 0 find /opt/finro/website/articles -name "*.html" -mtime +90 -delete 2>&1

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FinRo.ro — Ghidul tău complet pentru finanțe personale, asigurări și tehnologie în România. Comparații, recenzii și sfaturi practice.">
+    <meta name="keywords" content="finanțe personale România, comparații credite, asigurări auto, recenzii tehnologie, investiții, economisire, pensii, taxe">
+    <meta name="author" content="FinRo.ro">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="FinRo.ro — Finanțe, Asigurări & Tehnologie">
+    <meta property="og:description" content="Ghidul tău complet pentru finanțe personale, asigurări și tehnologie în România.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finro.ro">
+    <meta property="og:image" content="https://finro.ro/images/og-cover.jpg">
+    <meta property="og:locale" content="ro_RO">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://finro.ro">
+
+    <!-- Google AdSense — Replace ca-pub-XXXX with your publisher ID -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+    <!-- Google Analytics 4 — Replace G-XXXX with your measurement ID -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FinRo.ro",
+        "url": "https://finro.ro",
+        "description": "Ghidul tău complet pentru finanțe personale, asigurări și tehnologie în România",
+        "publisher": {
+            "@type": "Organization",
+            "name": "FinRo.ro",
+            "logo": {"@type": "ImageObject", "url": "https://finro.ro/images/logo.png"}
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://finro.ro/cauta?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <title>FinRo.ro — Finanțe Personale, Asigurări & Tehnologie | Ghid Complet România</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ═══ AD: Top Leaderboard 728×90 ═══ -->
+    <div class="ad-slot ad-slot--top" aria-label="Reclamă">
+        <div class="ad-placeholder">
+            <!-- <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-XXXX" data-ad-slot="1111111111"></ins> -->
+            <span class="ad-label">AD · 728×90 Leaderboard</span>
+        </div>
+    </div>
+
+    <!-- ═══ HEADER ═══ -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="/" class="header__logo">
+                <span class="logo__icon">₿</span>
+                <span class="logo__text">Fin<span class="logo__accent">Ro</span></span>
+            </a>
+            <nav class="header__nav" id="mainNav">
+                <a href="#finante" class="nav__link nav__link--active" data-category="finante">
+                    <span class="nav__icon">💰</span> Finanțe
+                </a>
+                <a href="#asigurari" class="nav__link" data-category="asigurari">
+                    <span class="nav__icon">🛡️</span> Asigurări
+                </a>
+                <a href="#tech" class="nav__link" data-category="tech">
+                    <span class="nav__icon">⚡</span> Tehnologie
+                </a>
+                <a href="#ghiduri" class="nav__link">
+                    <span class="nav__icon">📚</span> Ghiduri
+                </a>
+                <a href="#calculator" class="nav__link">
+                    <span class="nav__icon">🧮</span> Calculatoare
+                </a>
+            </nav>
+            <div class="header__actions">
+                <button class="header__search-btn" id="searchToggle" aria-label="Caută">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+                <button class="header__menu-btn" id="menuToggle" aria-label="Meniu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-overlay__inner">
+                <input type="search" placeholder="Caută articole, ghiduri, comparații..." class="search-overlay__input" id="searchInput">
+                <button class="search-overlay__close" id="searchClose">✕</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero">
+        <div class="hero__bg"><div class="hero__grain"></div><div class="hero__gradient"></div></div>
+        <div class="hero__content">
+            <div class="hero__badge">🇷🇴 #1 Ghid Financiar în România</div>
+            <h1 class="hero__title">Decizii financiare<br><span class="hero__title--accent">mai inteligente.</span></h1>
+            <p class="hero__subtitle">Comparații obiective, recenzii oneste și ghiduri practice pentru finanțele tale personale, asigurări și tehnologie.</p>
+            <div class="hero__cta">
+                <a href="#finante" class="btn btn--primary">Explorează Ghidurile</a>
+                <a href="#calculator" class="btn btn--outline">Calculator Financiar</a>
+            </div>
+            <div class="hero__stats">
+                <div class="hero__stat"><span class="hero__stat-num" data-count="2847">0</span><span class="hero__stat-label">Articole publicate</span></div>
+                <div class="hero__stat"><span class="hero__stat-num" data-count="156">0</span><span class="hero__stat-label">Comparații active</span></div>
+                <div class="hero__stat"><span class="hero__stat-num" data-count="89000">0</span><span class="hero__stat-label">Cititori lunar</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ TICKER ═══ -->
+    <div class="ticker">
+        <div class="ticker__label">ULTIMELE</div>
+        <div class="ticker__track">
+            <div class="ticker__content" id="tickerContent">
+                <span class="ticker__item">📈 BNR menține dobânda la 6.5% — ce înseamnă pentru creditele tale</span>
+                <span class="ticker__sep">•</span>
+                <span class="ticker__item">🏠 Prețurile apartamentelor în București cresc cu 8% în Q4</span>
+                <span class="ticker__sep">•</span>
+                <span class="ticker__item">📱 Samsung Galaxy S25 Ultra — recenzia completă disponibilă</span>
+                <span class="ticker__sep">•</span>
+                <span class="ticker__item">🛡️ RCA 2025: noi reguli și tarife actualizate</span>
+                <span class="ticker__sep">•</span>
+                <span class="ticker__item">💡 Ghid complet: Cum să îți optimizezi taxele în 2025</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ MAIN CONTENT + SIDEBAR ═══ -->
+    <main class="main">
+        <div class="main__grid">
+            <div class="main__content">
+
+                <!-- ═══ SECTION: FINANȚE PERSONALE ═══ -->
+                <section class="section" id="finante">
+                    <div class="section__header">
+                        <div class="section__tag">💰 FINANȚE PERSONALE</div>
+                        <h2 class="section__title">Controlul Banilor Tăi</h2>
+                        <a href="/finante" class="section__more">Vezi toate →</a>
+                    </div>
+
+                    <!-- Featured Article -->
+                    <article class="card card--featured" itemscope itemtype="https://schema.org/Article">
+                        <div class="card__image">
+                            <div class="card__image-placeholder card__image-placeholder--finance"><span>📊</span></div>
+                            <span class="card__badge card__badge--hot">🔥 Popular</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__meta">
+                                <span class="card__category">Credite</span>
+                                <time datetime="2025-02-07" itemprop="datePublished">7 Feb 2025</time>
+                                <span class="card__read">8 min citire</span>
+                            </div>
+                            <h3 class="card__title" itemprop="headline">
+                                <a href="/finante/comparatie-credite-imobiliare-2025">Comparație Credite Imobiliare 2025: Top 10 Bănci din România — Dobânzi, Costuri și Condiții</a>
+                            </h3>
+                            <p class="card__excerpt" itemprop="description">Am analizat în detaliu ofertele de credit imobiliar de la cele mai mari 10 bănci din România. Descoperă cine oferă cea mai bună dobândă și cele mai flexibile condiții.</p>
+                            <div class="card__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <div class="card__avatar">AR</div>
+                                <span itemprop="name">Ana Rădulescu</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div class="grid grid--3">
+                        <article class="card card--compact">
+                            <div class="card__image"><div class="card__image-placeholder card__image-placeholder--savings"><span>🏦</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Economisire</span><time>5 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/finante/cele-mai-bune-conturi-economii">Cele Mai Bune Conturi de Economii în 2025 — Comparație Dobânzi</a></h3>
+                            </div>
+                        </article>
+                        <article class="card card--compact">
+                            <div class="card__image"><div class="card__image-placeholder card__image-placeholder--invest"><span>📈</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Investiții</span><time>3 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/finante/ghid-investitii-incepatori">Ghid Investiții pentru Începători: ETF-uri, Acțiuni și Obligațiuni</a></h3>
+                            </div>
+                        </article>
+                        <article class="card card--compact">
+                            <div class="card__image"><div class="card__image-placeholder card__image-placeholder--tax"><span>🧾</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Taxe</span><time>1 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/finante/declaratia-unica-2025">Declarația Unică 2025: Tot Ce Trebuie Să Știi — Termen, Instrucțiuni</a></h3>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- ═══ AD: In-Content Rectangle 336×280 ═══ -->
+                    <div class="ad-slot ad-slot--in-content" aria-label="Reclamă">
+                        <div class="ad-placeholder">
+                            <!-- <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-XXXX" data-ad-slot="2222222222"></ins> -->
+                            <span class="ad-label">AD · 336×280 In-Content</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid--2">
+                        <article class="card card--horizontal">
+                            <div class="card__image card__image--sm"><div class="card__image-placeholder card__image-placeholder--pension"><span>👴</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Pensii</span><time>30 Ian 2025</time></div>
+                                <h3 class="card__title"><a href="/finante/pilon-2-vs-pilon-3">Pilonul II vs Pilonul III de Pensii: Comparație Completă 2025</a></h3>
+                            </div>
+                        </article>
+                        <article class="card card--horizontal">
+                            <div class="card__image card__image--sm"><div class="card__image-placeholder card__image-placeholder--credit"><span>💳</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Carduri</span><time>28 Ian 2025</time></div>
+                                <h3 class="card__title"><a href="/finante/cele-mai-bune-carduri-credit">Top 5 Carduri de Credit cu Cashback în România — 2025</a></h3>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- ═══ SECTION: ASIGURĂRI ═══ -->
+                <section class="section" id="asigurari">
+                    <div class="section__header">
+                        <div class="section__tag">🛡️ ASIGURĂRI</div>
+                        <h2 class="section__title">Protecție Inteligentă</h2>
+                        <a href="/asigurari" class="section__more">Vezi toate →</a>
+                    </div>
+
+                    <article class="card card--featured card--featured-alt">
+                        <div class="card__image">
+                            <div class="card__image-placeholder card__image-placeholder--insurance"><span>🚗</span></div>
+                            <span class="card__badge card__badge--new">Nou</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__meta"><span class="card__category">RCA</span><time>6 Feb 2025</time><span class="card__read">12 min citire</span></div>
+                            <h3 class="card__title"><a href="/asigurari/comparatie-rca-2025">RCA 2025: Comparație Completă a Prețurilor — Cele Mai Ieftine Polițe din România</a></h3>
+                            <p class="card__excerpt">Am comparat prețurile RCA de la toate companiile de asigurări din România. Vezi cine oferă cel mai bun preț pentru profilul tău.</p>
+                        </div>
+                    </article>
+
+                    <div class="grid grid--3">
+                        <article class="card card--compact">
+                            <div class="card__image"><div class="card__image-placeholder card__image-placeholder--health"><span>🏥</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Sănătate</span><time>4 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/asigurari/asigurare-sanatate-privata">Asigurare de Sănătate Privată: Merită? Comparație Prețuri 2025</a></h3>
+                            </div>
+                        </article>
+                        <article class="card card--compact">
+                            <div class="card__image"><div class="card__image-placeholder card__image-placeholder--travel"><span>✈️</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Călătorii</span><time>2 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/asigurari/asigurare-calatorie">Asigurare de Călătorie 2025: Ghid Complet + Cele Mai Bune Oferte</a></h3>
+                            </div>
+                        </article>
+                        <article class="card card--compact">
+                            <div class="card__image"><div class="card__image-placeholder card__image-placeholder--casco"><span>🔧</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">CASCO</span><time>31 Ian 2025</time></div>
+                                <h3 class="card__title"><a href="/asigurari/casco-vs-minikasko">CASCO vs MiniCASCO: Ce Poliță Să Alegi în 2025?</a></h3>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- ═══ AD: Native Sponsored ═══ -->
+                    <div class="ad-slot ad-slot--native" aria-label="Conținut sponsorizat">
+                        <div class="ad-placeholder ad-placeholder--native">
+                            <span class="ad-label">Conținut Sponsorizat · Native Ad</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══ SECTION: TEHNOLOGIE ═══ -->
+                <section class="section" id="tech">
+                    <div class="section__header">
+                        <div class="section__tag">⚡ TEHNOLOGIE</div>
+                        <h2 class="section__title">Recenzii & Comparații</h2>
+                        <a href="/tech" class="section__more">Vezi toate →</a>
+                    </div>
+
+                    <div class="grid grid--2">
+                        <article class="card card--featured card--vertical">
+                            <div class="card__image">
+                                <div class="card__image-placeholder card__image-placeholder--phone"><span>📱</span></div>
+                                <span class="card__badge card__badge--review">⭐ 9.2/10</span>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Telefoane</span><time>6 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/tech/samsung-galaxy-s25-ultra-recenzie">Samsung Galaxy S25 Ultra — Recenzie Completă: Merită Prețul?</a></h3>
+                                <p class="card__excerpt">Cameră de 200MP, procesor Snapdragon 8 Elite, 12GB RAM. Testăm în detaliu cel mai avansat Samsung.</p>
+                            </div>
+                        </article>
+                        <article class="card card--featured card--vertical">
+                            <div class="card__image">
+                                <div class="card__image-placeholder card__image-placeholder--laptop"><span>💻</span></div>
+                                <span class="card__badge card__badge--review">⭐ 8.8/10</span>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Laptopuri</span><time>4 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/tech/macbook-air-m4-recenzie">MacBook Air M4 — Recenzie: Cel Mai Bun Laptop pentru Productivitate?</a></h3>
+                                <p class="card__excerpt">Noul cip M4, 18 ore de autonomie, display Liquid Retina. Testăm dacă merită upgrade-ul.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="grid grid--3">
+                        <article class="card card--compact">
+                            <div class="card__image"><div class="card__image-placeholder card__image-placeholder--ai"><span>🤖</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">AI Tools</span><time>5 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/tech/cele-mai-bune-instrumente-ai">Top 10 Instrumente AI în 2025 — Productivitate, Scriere, Design</a></h3>
+                            </div>
+                        </article>
+                        <article class="card card--compact">
+                            <div class="card__image"><div class="card__image-placeholder card__image-placeholder--soft"><span>🖥️</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Software</span><time>3 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/tech/vpn-romania-comparatie">Cel Mai Bun VPN în 2025: Comparație Viteză, Preț, Securitate</a></h3>
+                            </div>
+                        </article>
+                        <article class="card card--compact">
+                            <div class="card__image"><div class="card__image-placeholder card__image-placeholder--acc"><span>🎧</span></div></div>
+                            <div class="card__body">
+                                <div class="card__meta"><span class="card__category">Accesorii</span><time>1 Feb 2025</time></div>
+                                <h3 class="card__title"><a href="/tech/cele-mai-bune-casti-wireless">Cele Mai Bune Căști Wireless sub 500 lei — Ghid Cumpărare 2025</a></h3>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- ═══ SECTION: CALCULATOARE ═══ -->
+                <section class="section" id="calculator">
+                    <div class="section__header">
+                        <div class="section__tag">🧮 INSTRUMENTE</div>
+                        <h2 class="section__title">Calculatoare Financiare</h2>
+                    </div>
+                    <div class="calc-grid">
+                        <div class="calc-card">
+                            <div class="calc-card__icon">🏠</div>
+                            <h3 class="calc-card__title">Calculator Credit</h3>
+                            <p class="calc-card__desc">Calculează rata lunară, dobânda totală și costul total al creditului.</p>
+                            <div class="calc-card__form">
+                                <div class="calc-field"><label>Suma creditului (RON)</label><input type="number" id="creditAmount" value="250000" min="1000" max="2000000"></div>
+                                <div class="calc-field"><label>Dobânda anuală (%)</label><input type="number" id="creditRate" value="7.5" min="0.1" max="30" step="0.1"></div>
+                                <div class="calc-field"><label>Perioada (ani)</label><input type="number" id="creditYears" value="25" min="1" max="35"></div>
+                                <button class="btn btn--calc" onclick="calculateCredit()">Calculează</button>
+                                <div class="calc-result" id="creditResult"></div>
+                            </div>
+                        </div>
+                        <div class="calc-card">
+                            <div class="calc-card__icon">💰</div>
+                            <h3 class="calc-card__title">Calculator Economii</h3>
+                            <p class="calc-card__desc">Vezi cum cresc economiile tale în timp cu dobândă compusă.</p>
+                            <div class="calc-card__form">
+                                <div class="calc-field"><label>Depunere inițială (RON)</label><input type="number" id="savingsInit" value="10000" min="0"></div>
+                                <div class="calc-field"><label>Depunere lunară (RON)</label><input type="number" id="savingsMonthly" value="500" min="0"></div>
+                                <div class="calc-field"><label>Dobânda anuală (%)</label><input type="number" id="savingsRate" value="5" min="0" max="30" step="0.1"></div>
+                                <div class="calc-field"><label>Perioada (ani)</label><input type="number" id="savingsYears" value="10" min="1" max="50"></div>
+                                <button class="btn btn--calc" onclick="calculateSavings()">Calculează</button>
+                                <div class="calc-result" id="savingsResult"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══ AD: Post-Calculator 728×90 ═══ -->
+                    <div class="ad-slot ad-slot--in-content" aria-label="Reclamă">
+                        <div class="ad-placeholder"><span class="ad-label">AD · 728×90 Post-Calculator</span></div>
+                    </div>
+                </section>
+
+                <!-- ═══ NEWSLETTER ═══ -->
+                <section class="newsletter" id="newsletter">
+                    <div class="newsletter__inner">
+                        <div class="newsletter__icon">📬</div>
+                        <h2 class="newsletter__title">Fii La Curent</h2>
+                        <p class="newsletter__text">Primește cele mai importante știri financiare, comparații noi și ghiduri direct în inbox. Gratuit, fără spam.</p>
+                        <form class="newsletter__form" onsubmit="return handleNewsletter(event)">
+                            <input type="email" placeholder="adresa@email.com" required class="newsletter__input">
+                            <button type="submit" class="btn btn--primary">Abonează-te</button>
+                        </form>
+                        <p class="newsletter__note">Peste 12,000 de abonați • Dezabonare oricând</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ═══ SIDEBAR ═══ -->
+            <aside class="sidebar">
+                <!-- AD: Sidebar Rectangle 300×250 -->
+                <div class="ad-slot ad-slot--sidebar" aria-label="Reclamă">
+                    <div class="ad-placeholder">
+                        <!-- <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXX" data-ad-slot="3333333333"></ins> -->
+                        <span class="ad-label">AD · 300×250</span>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget__title">🔥 Cele Mai Citite</h3>
+                    <ol class="widget__list">
+                        <li class="widget__item"><span class="widget__rank">01</span><a href="/finante/comparatie-credite-imobiliare-2025">Comparație Credite Imobiliare 2025</a></li>
+                        <li class="widget__item"><span class="widget__rank">02</span><a href="/asigurari/comparatie-rca-2025">RCA 2025: Cele Mai Ieftine Polițe</a></li>
+                        <li class="widget__item"><span class="widget__rank">03</span><a href="/tech/samsung-galaxy-s25-ultra-recenzie">Samsung Galaxy S25 Ultra — Recenzie</a></li>
+                        <li class="widget__item"><span class="widget__rank">04</span><a href="/finante/declaratia-unica-2025">Declarația Unică 2025: Ghid</a></li>
+                        <li class="widget__item"><span class="widget__rank">05</span><a href="/finante/pilon-2-vs-pilon-3">Pilonul II vs Pilonul III</a></li>
+                    </ol>
+                </div>
+
+                <!-- AD: Sidebar Sticky 300×600 -->
+                <div class="ad-slot ad-slot--sidebar ad-slot--sticky" aria-label="Reclamă">
+                    <div class="ad-placeholder"><span class="ad-label">AD · 300×600 Sticky</span></div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget__title">📂 Categorii</h3>
+                    <div class="widget__tags">
+                        <a href="/finante/credite" class="widget__tag">Credite <span>24</span></a>
+                        <a href="/finante/economisire" class="widget__tag">Economisire <span>18</span></a>
+                        <a href="/finante/investitii" class="widget__tag">Investiții <span>31</span></a>
+                        <a href="/finante/taxe" class="widget__tag">Taxe <span>15</span></a>
+                        <a href="/asigurari/rca" class="widget__tag">RCA <span>22</span></a>
+                        <a href="/asigurari/casco" class="widget__tag">CASCO <span>9</span></a>
+                        <a href="/tech/telefoane" class="widget__tag">Telefoane <span>28</span></a>
+                        <a href="/tech/ai" class="widget__tag">AI Tools <span>16</span></a>
+                    </div>
+                </div>
+
+                <div class="widget widget--exchange">
+                    <h3 class="widget__title">💱 Curs BNR</h3>
+                    <div class="exchange__grid">
+                        <div class="exchange__row"><span class="exchange__currency">EUR</span><span class="exchange__rate">4.9768</span><span class="exchange__change exchange__change--up">+0.02%</span></div>
+                        <div class="exchange__row"><span class="exchange__currency">USD</span><span class="exchange__rate">4.5892</span><span class="exchange__change exchange__change--down">-0.15%</span></div>
+                        <div class="exchange__row"><span class="exchange__currency">GBP</span><span class="exchange__rate">5.7463</span><span class="exchange__change exchange__change--up">+0.08%</span></div>
+                        <div class="exchange__row"><span class="exchange__currency">CHF</span><span class="exchange__rate">5.0234</span><span class="exchange__change exchange__change--down">-0.05%</span></div>
+                    </div>
+                    <div class="exchange__updated">Actualizat: 7 Feb 2025, 13:00</div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ═══ AD: Bottom Leaderboard 970×90 ═══ -->
+    <div class="ad-slot ad-slot--bottom" aria-label="Reclamă">
+        <div class="ad-placeholder"><span class="ad-label">AD · 970×90 Bottom Leaderboard</span></div>
+    </div>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo"><span class="logo__icon">₿</span><span class="logo__text">Fin<span class="logo__accent">Ro</span></span></a>
+                    <p class="footer__about">FinRo.ro este sursa ta de încredere pentru informații financiare, comparații de asigurări și recenzii tehnologice în România.</p>
+                </div>
+                <div class="footer__col"><h4>Finanțe</h4><a href="/finante/credite">Comparații Credite</a><a href="/finante/economisire">Sfaturi Economisire</a><a href="/finante/investitii">Ghid Investiții</a><a href="/finante/pensii">Informații Pensii</a><a href="/finante/taxe">Taxe & Impozite</a></div>
+                <div class="footer__col"><h4>Asigurări</h4><a href="/asigurari/rca">RCA Auto</a><a href="/asigurari/casco">CASCO</a><a href="/asigurari/sanatate">Sănătate</a><a href="/asigurari/calatorie">Călătorii</a><a href="/asigurari/locuinta">Locuință</a></div>
+                <div class="footer__col"><h4>Tehnologie</h4><a href="/tech/telefoane">Recenzii Telefoane</a><a href="/tech/laptopuri">Comparații Laptopuri</a><a href="/tech/software">Software & Apps</a><a href="/tech/ai">Instrumente AI</a></div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2025 FinRo.ro — Toate drepturile rezervate.</p>
+                <div class="footer__links">
+                    <a href="/politica-confidentialitate">Confidențialitate</a>
+                    <a href="/termeni">Termeni</a>
+                    <a href="/despre">Despre Noi</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/sitemap.xml">Sitemap</a>
+                </div>
+                <p class="footer__disclaimer">Informațiile prezentate au caracter informativ și nu constituie sfaturi financiare sau de investiții. Consultați un specialist.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-banner__inner">
+            <p>Folosim cookie-uri pentru a îmbunătăți experiența ta. <a href="/politica-cookie">Detalii</a></p>
+            <div class="cookie-banner__actions">
+                <button class="btn btn--outline btn--sm" onclick="manageCookies()">Setări</button>
+                <button class="btn btn--primary btn--sm" onclick="acceptCookies()">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
